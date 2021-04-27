@@ -10,6 +10,6 @@ RUN pip3 install --no-cache-dir -r /opt/app/requirements.txt
 
 COPY src/ /opt/app/
 
-EXPOSE 8000
+EXPOSE 5001
 WORKDIR /opt/app/
-ENTRYPOINT [ "gunicorn", "wsgi:app" ]
+ENTRYPOINT [ "gunicorn", "-b", "0.0.0.0:5001", "wsgi:app" ]
