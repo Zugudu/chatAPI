@@ -1,7 +1,7 @@
 FROM alpine:3.13.5
 
 RUN apk add --upgrade python3 py3-pip
-RUN pip3 install --upgrade pip3
+RUN pip3 install --upgrade pip
 
 RUN pip3 install --no-cache-dir gunicorn
 
