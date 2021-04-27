@@ -13,7 +13,7 @@ import os
 # ======================
 load_dotenv()
 
-db = pymongo.MongoClient(os.environ['DB_URL'])['chat']
+db = pymongo.MongoClient(os.environ['DB_URL'])[os.environ.get('DB_NAME', 'chat')]
 print('Database initilize')
 
 app = Flask(__name__)
