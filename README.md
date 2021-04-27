@@ -1,5 +1,5 @@
 # Intro
-Simple API for web chat on Flask. Created for educational purposes. Default listen port is `5000`
+Simple API for web chat on Flask. Created for educational purposes. Default listen port is `8000`
 # Enviroment variables
 | Variable | Description              | Default value |
 |----------|--------------------------|---------------|
