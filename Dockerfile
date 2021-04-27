@@ -12,4 +12,4 @@ COPY src/ /opt/app/
 
 EXPOSE 5000
 WORKDIR /opt/app/
-ENTRYPOINT [ "gunicorn", "-b 0.0.0.0:5000 wsgi:app" ]
+ENTRYPOINT [ "gunicorn", "--bind 0.0.0.0:5000 wsgi:app" ]
